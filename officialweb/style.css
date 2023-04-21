@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:courier;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    background: #d3d5d4;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+}
+
+.nav-links{
+    padding: 28px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #5f7880;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    background: #caa78d;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.signupbox{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    margin-top:30px;
+    background-color: #caa78d;
+    border-radius: 3px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+h4{
+    text-align: center;
+}
+
+form{
+    width: 300px;
+    margin-left: 30px;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color:#5f7880;
+    color: white;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.para-2{
+    text-align: center;
+    color: #4b5556;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.login{
+    width: 360px;
+    height: 270px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: #caa78d;
+}
